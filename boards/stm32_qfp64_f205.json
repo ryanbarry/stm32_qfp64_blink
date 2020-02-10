@@ -1,0 +1,38 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DSTM32F205xG -DSTM32F2",
+    "f_cpu": "120000000L",
+    "mcu": "stm32f205rgt6",
+    "variant": "stm32_qfp64_breakout_f205",
+    "ldscript": "boards/stm32f2xxxg.ld"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32F205RG",
+    "openocd_target": "stm32f2x",
+    "svd_path": "STM32F20x.svd"
+  },
+  "frameworks": [
+      "libopencm3"
+  ],
+  "name": "stm32_qfp64_f205",
+  "upload": {
+    "maximum_ram_size": 131072,
+    "maximum_size": 1048576,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic"
+    ]
+  },
+  "url": "https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series/stm32f2x5/stm32f205rg.html",
+  "vendor": "ST"
+}
